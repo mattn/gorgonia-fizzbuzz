@@ -45,7 +45,7 @@ func main() {
 	x := gorgonia.NodeFromAny(g, xT, gorgonia.WithName("x"))
 
 	var wT0, wT1 *tensor.Dense
-	f, err := os.Open(`../../fizzbuzz.bin`)
+	f, err := os.Open(`fizzbuzz.bin`)
 	if err != nil {
 		log.Fatal(err)
 	}
