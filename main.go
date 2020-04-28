@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/cheggaaa/pb"
+	"github.com/cheggaaa/pb/v3"
 	"github.com/pkg/errors"
 	"gorgonia.org/gorgonia"
 	"gorgonia.org/tensor"
