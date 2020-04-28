@@ -96,8 +96,7 @@ func main() {
 
 	bar := pb.New(*epochs)
 	bar.SetRefreshRate(time.Second / 20)
-	bar.SetMaxWidth(80)
-	bar.Set(0)
+	bar.Set("Training", 0)
 	bar.Start()
 
 	for i := 0; i < *epochs; i++ {
@@ -131,7 +130,6 @@ func main() {
 			vm.Reset()
 		}
 		bar.Increment()
-		bar.Update()
 	}
 	bar.Finish()
 
